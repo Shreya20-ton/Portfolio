@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+   h1{
+    text-align: center;
+    color:rgb(42, 23, 59) ;
+    text-decoration:underline;
+    
+  }
+  .main{
+    display: flex;
+    justify-content:space-around;
+    color:black;
+    margin-top: 20px;
+
+  }
+  .img img{
+    height:20rem;
+    width: 20rem;
+    margin-left: 49px;
+    margin-top: 8rem;
+  }
+  .para {
+    height:20rem;
+    width: 20rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    
+  }
+  .para h1{
+    text-align: left;
+    text-decoration: none;
+    color:black;
+  }
+  .w{
+    max-width: 60rem;
+    margin: 4rem auto;
+    padding: 4rem;
+    background-color: rgb(82, 88, 255);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+
+    /* Styling for the Back Button */
+    .back-button {
+      display: block; 
+      margin: 20px auto 0; 
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #0077b5;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #005f8a;
+    }
+   
+</style>
+<body>
+    <div class="w">
+    <h1>About</h1>
+    <div class="main">
+    <div class="img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRritI91vxS8FHdPEe4vaMiLV6GqABROSpgtA&s" alt="">
+    </div>
+    <div class="para">
+        <h2>I'm Shreya Wallalwar</h2>
+        <p>
+          I am a student pursuing a Bachelor of Computer Science and Business Systems at SVPCET. With a keen interest in technology, I am always eager to learn and embrace opportunities that drive innovation and creativity. <br>I am passionate about developing solutions that bridge the gap between technical advancements and practical applications, aiming to make a positive impact through my work.
+              From theory to practice, I thrive on engineering challenges and am eager to make impactful contributions to the field.<br>This portfolio showcases my technical skills and creativity through projects spanning software development, innovative solutions, and experimentation with emerging technologies. Join me on this journey of exploration and innovation in engineering and technology
+          
+ </p>
+    </div>
+</div>
+</div>
+
+<!-- Back Button -->
+<button class="back-button" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualifications</title>
+  <style>
+    /* Styling for the Body */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5; /* Light background */
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container for the Table */
+    .qualifications-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* Heading Styling */
+    .qualifications-heading {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0077b5;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #0077b5;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1; /* Hover effect for rows */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .qualifications-heading {
+        font-size: 24px;
+      }
+    }
+
+    /* Styling for the Back Button */
+    .back-button {
+      display: block; 
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #0077b5;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #005f8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="qualifications-container">
+    <h1 class="qualifications-heading">My Qualifications</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree/Qualification</th>
+          <th>Institution</th>
+          <th>Year of Completion</th>
+          <th>Grade/Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bachelor of Computer Science and Business Systems</td>
+          <td>SVPCET</td>
+          <td>2026</td>
+          <td>Expected</td>
+        </tr>
+        <tr>
+          <td>High School (Class 12)</td>
+          <td>Inspire Institute and Junior College</td>
+          <td>2020</td>
+          <td>74%</td>
+        </tr>
+        <tr>
+          <td>Secondary School (Class 10)</td>
+          <td>Stella Maris High School</td>
+          <td>2020</td>
+          <td>82%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Back Button -->
+  <button class="back-button" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>

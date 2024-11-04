@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Section</title>
+  <style>
+    /* General Styling for Contact Section */
+    .contact-section {
+      background-color: #141439; /* Light background */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-height: 600px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .contact-heading {
+      font-size: 24px;
+      color: rgb(62, 221, 215);
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #9c1717;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-item:hover {
+      color: #0077b5; /* LinkedIn blue on hover */
+    }
+
+    .contact-icon {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #0077b5; /* Icon color */
+    }
+
+    .contact-link {
+      color:white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-link:hover {
+      color: #0077b5;
+    }
+
+    /* Styling for the Back Button */
+    .back-button {
+      display: block; 
+      margin: 20px auto 0; 
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #0077b5;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #005f8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-section">
+    <h2 class="contact-heading">Get in Touch</h2>
+
+    <div class="contact-item">
+      <span class="contact-icon">📧</span>
+      <a href="mailto:your-email@gmail.com" class="contact-link">wallalwarshreya@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      <span class="contact-icon">🔗</span>
+      <a href="https://www.linkedin.com/in/Shreya wallalwar" class="contact-link" target="_blank">
+        Shreya Wallalwar
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <span class="contact-icon">📞</span>
+      <a href="tel:+1234567890" class="contact-link">+917666414187</a>
+    </div>
+  </div>
+
+   <!-- Back Button -->
+   <button class="back-button" onclick="goBack()">Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
